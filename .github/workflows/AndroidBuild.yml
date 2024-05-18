@@ -9,7 +9,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: Checkout GIT
         uses: actions/checkout@v4
 
       - name: Setup Java
