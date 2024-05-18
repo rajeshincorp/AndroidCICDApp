@@ -12,11 +12,11 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Setup Java JDK
-        uses: actions/setup-java@3.13.0
+      - name: Setup Java
+        uses: actions/setup-java@v4
         with:
-          java-version: '17'
           distribution: 'adopt'
+          java-version: '17'
 
       - name: Build with Gradle
         uses: ./gradlew build
